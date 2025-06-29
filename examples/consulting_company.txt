@@ -1,0 +1,21 @@
+# ––– DEMANDA DE MERCADO E CAPACIDADE DE ENTREGA –––
+Market_Demand                    + Allocation_Pressure
+Allocation_Pressure             + Professionals_Allocated
+Allocation_Pressure             + Need_for_Training
+Need_for_Training               + Training_Cost
+Training_Cost                   + Labor_Cost
+Professionals_Allocated         - Allocation_Pressure         # Loop B1: capacidade reduz pressão
+Professionals_Allocated         - Time_to_Market
+Professionals_Allocated         - Need_for_Training           # Loop B2: mais gente, menos necessidade de treinar
+
+# ––– IMPACTO EM CUSTOS –––
+Labor_Cost                      + Project_Cost
+Market_Demand                   + Project_Cost                # Alta demanda pressiona custos totais
+Project_Cost                    - Market_Competitiveness
+
+# ––– LOOPS DE AJUSTE E CRESCIMENTO –––
+Training_Cost                   - Project_Profitability
+Project_Profitability           + Investment_in_Training      # Reinforcement loop: bons resultados levam a mais investimento
+Investment_in_Training          - Time_to_Train_New_People
+Time_to_Train_New_People        - Professionals_Ready
+Professionals_Ready             - Allocation_Pressure         # Loop B3: mais prontos = menos pressão
