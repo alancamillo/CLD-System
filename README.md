@@ -160,6 +160,11 @@ DETAILED SYSTEM ANALYSIS
    ⚠️  Warning: May lead to uncontrolled growth
 ```
 
+### 4.2. Example Output
+
+![Nuclear Power Plant CLD Example](examples/nuclear.png)
+
+
 ## 5. Professional Features
 
 ### ✨ Advanced Features:
