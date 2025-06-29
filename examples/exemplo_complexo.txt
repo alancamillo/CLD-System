@@ -1,0 +1,23 @@
+# Exemplo complexo de Adoção de Tecnologia
+# Baseado no segundo diagrama mostrado
+
+WillingnessToAdopt     + AdoptionRate
+AdoptionRate          + NumberOfUsers
+NumberOfUsers         + QuantityAndQualityOfInfo
+QuantityAndQualityOfInfo + WillingnessToAdopt
+NumberOfUsers         - PotentialUsers
+AdoptionRate          - PotentialUsers
+NumberOfUsers         + NetworkEffects
+NetworkEffects        + WillingnessToAdopt
+NumberOfUsers         + CumulativeProduction
+CumulativeProduction  + EconomiesOfScale
+EconomiesOfScale      + CostAndPerformance
+CostAndPerformance    + WillingnessToAdopt
+CumulativeProduction  + LearningCurve
+LearningCurve         + CostAndPerformance
+NumberOfUsers         + EmergenceOfStandards
+EmergenceOfStandards  + WillingnessToAdopt
+RateOfInnovation      + WillingnessToAdopt
+NumberOfUsers         + MarketSaturation
+MarketSaturation      - AdoptionRate
+PerceivedRisks        - WillingnessToAdopt 

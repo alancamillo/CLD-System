@@ -1,0 +1,15 @@
+# CLD Minimal Dependencies - Apenas o Essencial para cld_graphviz.py
+
+# Análise de grafos e detecção de loops
+networkx>=3.0
+
+# Interface Graphviz para diagramas profissionais
+pydot>=3.0.0
+
+# Python bindings para Graphviz 
+graphviz>=0.20.0
+
+# NOTA: Instale o Graphviz no sistema primeiro:
+# Linux: sudo apt install graphviz
+# macOS: brew install graphviz  
+# Windows: https://graphviz.org/download/ 

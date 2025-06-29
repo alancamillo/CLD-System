@@ -1,0 +1,20 @@
+#––– CRISE DO PETRÓLEO E OPÇÃO NUCLEAR –––
+Oil_Price                      + Attractiveness_Nuclear
+Oil_Price                      + Risk_Imported_Commodities
+Risk_Imported_Commodities      + Political_Push_Energy_Independence
+Attractiveness_Nuclear         + Nuclear_Power_Adoption
+Nuclear_Power_Adoption         - Reliance_on_Imported_Oil
+Reliance_on_Imported_Oil       - Energy_Independence
+Energy_Independence            - Risk_Imported_Commodities
+
+# ––– GOVERNANÇA E CAPACIDADE INDUSTRIAL –––
+Number_Private_Companies        - Industry_Efficiency
+Industry_Efficiency             - Pressure_for_Consolidation
+Pressure_for_Consolidation      + Nationalization_Electric_Sector
+Nationalization_Electric_Sector + Centralized_Planning
+Centralized_Planning            + Infrastructure_Nuclear_Capacity
+Infrastructure_Nuclear_Capacity + Nuclear_Power_Adoption
+
+# ---- Fechamento dos ciclos ----
+Centralized_Planning            - Pressure_for_Consolidation      # Loop B1 (controle de consolidação)
+Nuclear_Power_Adoption          - Number_Private_Companies        # Loop B2 (estrutura do setor)

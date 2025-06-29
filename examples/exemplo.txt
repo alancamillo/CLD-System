@@ -1,0 +1,4 @@
+EstresseFuncionarios  + Absenteismo
+Absenteismo          - Produtividade
+Produtividade        - Qualidade
+Qualidade            + EstresseFuncionarios 

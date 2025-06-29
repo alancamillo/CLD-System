@@ -1,0 +1,32 @@
+# CLD: Sistema de Gestão Empresarial
+# Loops de Produtividade e Qualidade
+
+# Loop Principal de Produtividade (Reforçador)
+PressaoPrazo + HorasExtras
+HorasExtras + Estresse
+Estresse - QualidadeTrabalho
+QualidadeTrabalho - SatisfacaoCliente
+SatisfacaoCliente - ReceitaEmpresa
+ReceitaEmpresa - PressaoPrazo
+
+# Loop de Recursos Humanos (Balanceador)
+Estresse + RotatividadeFuncionarios
+RotatividadeFuncionarios + CustosContratacao
+CustosContratacao - OrcamentoTreinamento
+OrcamentoTreinamento - CompetenciaEquipe
+CompetenciaEquipe + QualidadeTrabalho
+
+# Loop de Inovação (Reforçador)
+ReceitaEmpresa + InvestimentoPD
+InvestimentoPD + InovacaoProduto
+InovacaoProduto + SatisfacaoCliente
+
+# Loop de Sustentabilidade (Balanceador)
+HorasExtras - TempoDescanso
+TempoDescanso + BemEstarFuncionarios
+BemEstarFuncionarios - RotatividadeFuncionarios
+
+# Fatores Externos
+CompetenciaEquipe + Produtividade
+Produtividade - PressaoPrazo
+BemEstarFuncionarios + CompetenciaEquipe 

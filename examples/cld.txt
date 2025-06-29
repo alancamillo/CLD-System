@@ -1,0 +1,7 @@
+# sintaxe: origem  sinal  destino
+# sinal: +  (mesma direção)   –  (direções opostas)
+
+PressaoPrazo          + HorasExtras
+HorasExtras           - Produtividade
+Produtividade         - AtrasoCronograma
+AtrasoCronograma      + PressaoPrazo 
